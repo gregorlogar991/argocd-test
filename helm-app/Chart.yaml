@@ -7,6 +7,6 @@ version: 0.1.0
 appVersion: "1.0"
 
 dependencies:
-  - name: teochenglim
+  - name: dummy-nginx
     version: 1.0.3
     repository: https://teochenglim.github.io/helm-charts/
