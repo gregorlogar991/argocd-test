@@ -32,7 +32,7 @@ spec:
           - name: stable-hash
             valueFrom:
               podTemplateHashValue: Stable
-          - name: canary-hash
+          - name: latest-hash
             valueFrom:
               podTemplateHashValue: Latest
           templates:
