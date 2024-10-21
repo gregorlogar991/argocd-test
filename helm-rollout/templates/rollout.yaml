@@ -12,6 +12,7 @@ spec:
     metadata:
       labels:
         app: rollout-analysis-step
+        test: {{ required "Keda triggers must be defined and not empty" .Values.testValue }}
     spec:
       containers:
       - name: rollouts-demo

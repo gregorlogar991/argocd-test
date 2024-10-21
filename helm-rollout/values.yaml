@@ -6,3 +6,5 @@ replicaCount: 1
 
 image:
   tag: "green"
+
+testValue:
