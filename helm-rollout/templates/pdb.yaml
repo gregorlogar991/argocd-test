@@ -6,4 +6,4 @@ spec:
   maxUnavailable: 0
   selector:
     matchLabels:
-      argocd.argoproj.io/instance: glogar-test
+      app: rollout-analysis-step
