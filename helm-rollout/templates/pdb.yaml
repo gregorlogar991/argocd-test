@@ -3,7 +3,7 @@ kind: PodDisruptionBudget
 metadata:
   name: example-pdb
 spec:
-  maxUnavailable: 1
+  maxUnavailable: 0
   selector:
     matchLabels:
       app: rollout-analysis-step
