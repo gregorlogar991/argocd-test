@@ -21,7 +21,7 @@ spec:
         - containerPort: 8080
         readinessProbe:
           httpGet:
-            path: /ready
+            path: {{ .Values.probes.ready }}
             port: 8080
           initialDelaySeconds: 2
           periodSeconds: 2
@@ -30,7 +30,7 @@ spec:
           failureThreshold: 2
         livenessProbe:
           httpGet:
-            path: /live
+            path: {{ .Values.probes.live }}
             port: 8080
           initialDelaySeconds: 5
           periodSeconds: 10
