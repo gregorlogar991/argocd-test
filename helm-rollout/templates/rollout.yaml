@@ -19,8 +19,11 @@ spec:
         imagePullPolicy: Always
         lifecycle:
           preStop:
-            exec:
-              command: ["/bin/sh", "-c", "curl -X POST http://localhost:8080/traffic/off && echo OK || echo Failed"]
+            httpPost:
+              path: /traffic/off
+              port: 8080
+            # exec:
+            #   command: ["/bin/sh", "-c", "curl -X POST http://localhost:8080/traffic/off && echo OK || echo Failed"]
         ports:
         - containerPort: 8080
         readinessProbe:
