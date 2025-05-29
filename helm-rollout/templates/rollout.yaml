@@ -29,7 +29,7 @@ spec:
         readinessProbe:
           httpGet:
             path: {{ .Values.probes.ready }}
-            port: 8080
+            port: {{ .Values.probes.port }}
           initialDelaySeconds: 2
           periodSeconds: 2
           timeoutSeconds: 1
@@ -38,7 +38,7 @@ spec:
         livenessProbe:
           httpGet:
             path: {{ .Values.probes.live }}
-            port: 8080
+            port: {{ .Values.probes.port }}
           initialDelaySeconds: 5
           periodSeconds: 10
           timeoutSeconds: 1
