@@ -11,5 +11,6 @@ image:
 probes:
   # ready: "/live"
   # live:  "/health"
+  port: 8080
   ready: "/health"
   live:  "/live"
