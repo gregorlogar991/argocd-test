@@ -9,5 +9,7 @@ image:
   tag: "green"
 
 probes:
-  ready: "/live"
-  live:  "/health"
+  # ready: "/live"
+  # live:  "/health"
+  ready: "/health"
+  live:  "/live"
