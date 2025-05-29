@@ -31,10 +31,10 @@ spec:
             path: {{ .Values.probes.ready }}
             port: 8080
           initialDelaySeconds: 2
-          periodSeconds: 10
+          periodSeconds: 2
           timeoutSeconds: 1
           successThreshold: 1
-          failureThreshold: 3
+          failureThreshold: 2
         livenessProbe:
           httpGet:
             path: {{ .Values.probes.live }}
