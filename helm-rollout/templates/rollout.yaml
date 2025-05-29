@@ -19,7 +19,7 @@ spec:
         imagePullPolicy: Always
         lifecycle:
           preStop:
-            httpPost:
+            httpGet:
               path: /traffic/off
               port: 8080
             # exec:
